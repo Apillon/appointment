@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import { WebStorageKeys } from '~/lib/values/general.values';
-import { AuthResponseProfile } from '~/lib/types/general.types';
+import type { AuthResponseProfile } from '~/lib/types/general.types';
 
 let abortController = null as AbortController | null;
 

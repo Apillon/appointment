@@ -1,10 +1,10 @@
-import { ConfigInterface } from '~/lib/types/general.types';
+import type { ConfigInterface } from '~/lib/types/general.types';
 
 const config: ConfigInterface = {
-  APP_URL: 'https://app.apillon.io',
+  APP_URL: 'https://appointment.web3approved.com',
   API_BASE: 'https://api.apillon.io',
   CHAIN_ID: 1284,
-  CONTRACT_ADDRESS: null,
+  CONTRACT_ADDRESS: '0x353eE349fd86c12D1f75f8d7d4190EF586D21b8e',
   METADATA_BASE_URI: null,
   METADATA_TOKEN: null,
 };

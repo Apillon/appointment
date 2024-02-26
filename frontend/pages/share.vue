@@ -2,6 +2,9 @@
 import { prepareOG } from '~/lib/utils/helpers';
 import { Chains } from '~/lib/values/general.values';
 
+definePageMeta({
+  layout: 'claim',
+});
 useHead({
   title: 'Mint your NFT Token',
 });

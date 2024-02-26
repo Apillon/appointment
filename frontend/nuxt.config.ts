@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   components: ['~/components/general', '~/components/parts'],
 
   imports: {
-    dirs: ['composables/', 'composables/stores/**', 'lib/utils/**'],
+    dirs: ['composables/', 'composables/stores/**', 'lib/**'],
   },
 
   modules: [
@@ -63,9 +63,7 @@ export default defineNuxtConfig({
     optimizeDeps: {
       include:
         // must use NODE_ENV (to build production version with dev config)
-        process.env.NODE_ENV === Environments.dev
-          ? ['naive-ui', 'vueuc', 'date-fns-tz/esm/formatInTimeZone']
-          : [],
+        process.env.NODE_ENV === Environments.dev ? ['naive-ui', 'vueuc'] : [],
     },
   },
 
