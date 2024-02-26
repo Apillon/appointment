@@ -146,9 +146,6 @@ function addItem(user: UserInterface) {
   if (!validateEmail(newUser.value.email)) {
     message.warning('Please enter a valid email address');
     return;
-  } else if (!newUser.value.email_start_send_time) {
-    message.warning('Please select start time');
-    return;
   }
 
   user.email = newUser.value.email;

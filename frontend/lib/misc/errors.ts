@@ -65,6 +65,9 @@ export const ErrorCodes = {
   400005: 'Missing signature',
   400006: 'Token does not exists',
   400007: 'NFT already claimed',
+  400008: 'Wrong signature',
+  400009: 'Wrong admin',
+  400010: 'Airdrop failed',
 
   // SystemErrorCode
   500000: 'DEFAULT_SYSTEM_ERROR',
