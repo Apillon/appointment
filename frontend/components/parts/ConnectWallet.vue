@@ -40,8 +40,10 @@
 </template>
 
 <script lang="ts" setup>
+import type { PropType } from 'vue';
 import type { Size } from 'naive-ui/es/button/src/interface';
 import { useAccount, useConnect, useDisconnect, useWalletClient } from 'use-wagmi';
+import { sleep } from '~/lib/utils/helpers';
 
 type LoginInterface = {
   jwt: string;
@@ -57,13 +59,9 @@ const { error } = useMessage();
 const userStore = useUserStore();
 const { handleError } = useErrors();
 
-const { connect, connectors, isLoading } = useConnect({
-  onSuccess: () => {
-    console.log('success');
-  },
-});
+const { connect, connectors, isLoading } = useConnect();
 const { data: walletClient, refetch } = useWalletClient();
-const { address, isConnected } = useAccount({ onConnect: loginDelay });
+const { address, isConnected } = useAccount({ onConnect: login });
 const { disconnect } = useDisconnect();
 
 const loading = ref<boolean>(false);
@@ -73,12 +71,14 @@ watch(
   () => isConnected.value,
   async _ => {
     if (isConnected.value) {
-      loginDelay();
+      login();
     }
   }
 );
 
 async function login() {
+  await sleep(200);
+
   if (loading.value) return;
   loading.value = true;
 
@@ -121,10 +121,6 @@ async function login() {
     handleError(e);
   }
   loading.value = false;
-}
-
-function loginDelay() {
-  setTimeout(() => login(), 100);
 }
 
 function disconnectWallet() {

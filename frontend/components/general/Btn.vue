@@ -56,6 +56,7 @@
 </template>
 
 <script lang="ts" setup>
+import type { PropType } from 'vue';
 import { NButton } from 'naive-ui';
 import {
   type Type as NButtonType,
