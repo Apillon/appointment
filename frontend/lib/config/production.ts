@@ -2,9 +2,11 @@ import type { ConfigInterface } from '~/lib/types/general.types';
 
 const config: ConfigInterface = {
   APP_URL: 'https://appointment.web3approved.com',
-  API_BASE: 'https://api.apillon.io',
-  CHAIN_ID: 1284,
-  CONTRACT_ADDRESS: '0x353eE349fd86c12D1f75f8d7d4190EF586D21b8e',
+  API_BASE: 'https://appointment-api.web3approved.com',
+  // CHAIN_ID: 1284,
+  CHAIN_ID: 1287,
+  // CONTRACT_ADDRESS: '0x353eE349fd86c12D1f75f8d7d4190EF586D21b8e',
+  CONTRACT_ADDRESS: '0x9DcbdB435895780C7735731050F8361Cd1971BFA',
   METADATA_BASE_URI: null,
   METADATA_TOKEN: null,
 };

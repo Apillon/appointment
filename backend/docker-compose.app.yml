@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+
+  airdrop_appointment:
+    image: public.ecr.aws/i0e4n2k8/appointment:latest
+    container_name: airdrop_appointment
+    env_file:
+      - .env.deploy
+    restart: always
+    networks:
+      - web
+      - db
+
+networks:
+  db:
+    name: db
+    external: true
+  web:
+    name: web
+    external: true

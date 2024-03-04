@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  airdrop_db:
+    image: mysql
+    container_name: airdrop_db
+    env_file:
+      - .env.sql.deploy
+    ports:
+      - '3306:3306'
+    restart: always
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - db
+
+  airdrop_app:
+    image: public.ecr.aws/i0e4n2k8/appointment:latest
+    container_name: airdrop_app
+    depends_on:
+      - airdrop_db
+    env_file:
+      - .env.deploy
+    restart: always
+    networks:
+      - web
+      - db
+
+volumes:
+  mysql-data:
+
+networks:
+  db:
+  web:
+    name: web
+    external: true
