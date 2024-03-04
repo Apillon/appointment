@@ -49,9 +49,15 @@ export class Cron {
       for (let i = 0; i < users.length; i++) {
         try {
           const token = await generateEmailAirdropToken(users[i].email);
-          await SmtpSendTemplate([users[i].email], 'Claim your NFT', 'en-airdrop-claim', {
-            link: `${env.APP_URL}/claim?token=${token}`,
-          });
+          await SmtpSendTemplate(
+            [users[i].email],
+            'appointMENT NFTs',
+            'en-airdrop-claim',
+            {
+              link: `${env.APP_URL}/claim?token=${token}`,
+            },
+            'MENT Ljubljana'
+          );
           updates.push(
             `(${users[i].id}, '${users[i].email}', ${AirdropStatus.EMAIL_SENT}, '${dateToSqlString(
               new Date()
