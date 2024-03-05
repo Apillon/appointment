@@ -1,770 +1,753 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Airdrop claim</title>
 
-    <style type="text/css">
-      /* CONFIG STYLES Please do not delete and edit CSS styles below */
-      /* IMPORTANT THIS STYLES MUST BE ON FINAL EMAIL */
-      #outlook a {
-        padding: 0;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <title>appointMENT 8.0 NFTs</title>
 
-      .ExternalClass {
-        width: 100%;
-      }
+  <style type="text/css">
+    /* CONFIG STYLES Please do not delete and edit CSS styles below */
+    /* IMPORTANT THIS STYLES MUST BE ON FINAL EMAIL */
+    #outlook a {
+      padding: 0;
+    }
 
-      .ExternalClass,
-      .ExternalClass p,
-      .ExternalClass span,
-      .ExternalClass font,
-      .ExternalClass td,
-      .ExternalClass div {
-        line-height: 100%;
-      }
+    .ExternalClass {
+      width: 100%;
+    }
 
-      .button {
-        mso-style-priority: 100 !important;
-        text-decoration: none !important;
-      }
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
 
-      a[x-apple-data-detectors] {
-        color: inherit !important;
-        text-decoration: none !important;
-        font-size: inherit !important;
-        font-family: inherit !important;
-        font-weight: inherit !important;
-        line-height: inherit !important;
-      }
+    .button {
+      mso-style-priority: 100 !important;
+      text-decoration: none !important;
+    }
 
-      [data-ogsb] .button {
-        border-width: 0 !important;
-        padding: 16px 40px 16px 40px !important;
-      }
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
 
-      /*
+    [data-ogsb] .button {
+      border-width: 0 !important;
+      padding: 16px 40px 16px 40px !important;
+    }
+
+    /*
         END OF IMPORTANT
         */
-      s {
-        text-decoration: line-through;
-      }
+    s {
+      text-decoration: line-through;
+    }
 
-      html,
-      body {
-        width: 100%;
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-      }
+    html,
+    body {
+      width: 100%;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
 
-      body {
-        font-family: 'arial', 'helvetica neue', 'helvetica', 'sans-serif';
-      }
+    body {
+      font-family: 'arial', 'helvetica neue', 'helvetica', 'sans-serif';
+    }
 
-      table {
-        mso-table-lspace: 0pt;
-        mso-table-rspace: 0pt;
-        border-collapse: collapse;
-        border-spacing: 0px;
-      }
+    table {
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      border-collapse: collapse;
+      border-spacing: 0px;
+    }
 
-      table td,
-      html,
-      body,
-      .wrapper {
-        padding: 0;
-        margin: 0;
-      }
+    table td,
+    html,
+    body,
+    .wrapper {
+      padding: 0;
+      margin: 0;
+    }
 
-      .content,
-      .header,
-      .footer {
-        table-layout: fixed !important;
-        width: 100%;
-      }
+    .content,
+    .header,
+    .footer {
+      table-layout: fixed !important;
+      width: 100%;
+    }
 
-      img {
-        display: block;
-        border: 0;
-        outline: none;
-        text-decoration: none;
-        -ms-interpolation-mode: bicubic;
-      }
+    img {
+      display: block;
+      border: 0;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
 
-      table tr {
-        border-collapse: collapse;
-      }
+    table tr {
+      border-collapse: collapse;
+    }
 
-      p,
-      hr {
-        margin: 0;
-      }
+    p,
+    hr {
+      margin: 0;
+    }
 
-      h1,
-      h2,
-      h3,
-      h4,
-      h5 {
-        margin: 0;
-        line-height: 120%;
-        mso-line-height-rule: exactly;
-        font-family: 'arial', 'helvetica neue', 'helvetica', 'sans-serif';
-      }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      margin: 0;
+      line-height: 120%;
+      mso-line-height-rule: exactly;
+      font-family: 'arial', 'helvetica neue', 'helvetica', 'sans-serif';
+    }
+
+    p,
+    ul li,
+    ol li,
+    a {
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      mso-line-height-rule: exactly;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .p5 {
+      padding: 5px;
+    }
+
+    .p5t {
+      padding-top: 5px;
+    }
+
+    .p5b {
+      padding-bottom: 5px;
+    }
+
+    .p5l {
+      padding-left: 5px;
+    }
+
+    .p5r {
+      padding-right: 5px;
+    }
+
+    .p10 {
+      padding: 10px;
+    }
+
+    .p10t {
+      padding-top: 10px;
+    }
+
+    .p10b {
+      padding-bottom: 10px;
+    }
+
+    .p10l {
+      padding-left: 10px;
+    }
+
+    .p10r {
+      padding-right: 10px;
+    }
+
+    .p15 {
+      padding: 15px;
+    }
+
+    .p15t {
+      padding-top: 15px;
+    }
+
+    .p15b {
+      padding-bottom: 15px;
+    }
+
+    .p15l {
+      padding-left: 15px;
+    }
+
+    .p15r {
+      padding-right: 15px;
+    }
+
+    .p20 {
+      padding: 20px;
+    }
+
+    .p20t {
+      padding-top: 20px;
+    }
+
+    .p20b {
+      padding-bottom: 20px;
+    }
+
+    .p20l {
+      padding-left: 20px;
+    }
+
+    .p20r {
+      padding-right: 20px;
+    }
+
+    .p25 {
+      padding: 25px;
+    }
+
+    .p25t {
+      padding-top: 25px;
+    }
+
+    .p25b {
+      padding-bottom: 25px;
+    }
+
+    .p25l {
+      padding-left: 25px;
+    }
+
+    .p25r {
+      padding-right: 25px;
+    }
+
+    .p30 {
+      padding: 30px;
+    }
+
+    .p30t {
+      padding-top: 30px;
+    }
+
+    .p30b {
+      padding-bottom: 30px;
+    }
+
+    .p30l {
+      padding-left: 30px;
+    }
+
+    .p30r {
+      padding-right: 30px;
+    }
+
+    .p35 {
+      padding: 35px;
+    }
+
+    .p35t {
+      padding-top: 35px;
+    }
+
+    .p35b {
+      padding-bottom: 35px;
+    }
+
+    .p35l {
+      padding-left: 35px;
+    }
+
+    .p35r {
+      padding-right: 35px;
+    }
+
+    .p40 {
+      padding: 40px;
+    }
+
+    .p40t {
+      padding-top: 40px;
+    }
+
+    .p40b {
+      padding-bottom: 40px;
+    }
+
+    .p40l {
+      padding-left: 40px;
+    }
+
+    .p40r {
+      padding-right: 40px;
+    }
+
+    .menu td {
+      border: 0;
+    }
+
+    .menu td a img {
+      display: inline-block !important;
+    }
+
+    /* END CONFIG STYLES */
+    a {
+      text-decoration: underline;
+    }
+
+    p,
+    ul li,
+    ol li {
+      font-family: 'arial', 'helvetica neue', 'helvetica', 'sans-serif';
+      line-height: 150%;
+    }
+
+    ul li,
+    ol li {
+      margin-bottom: 15px;
+      margin-left: 0;
+    }
+
+    .menu td a {
+      text-decoration: none;
+      display: block;
+      font-family: 'arial', 'helvetica neue', 'helvetica', 'sans-serif';
+    }
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: center top;
+    }
+
+    .content-body {
+      background-color: #ffffff;
+    }
+
+    .content-body p,
+    .content-body ul li,
+    .content-body ol li {
+      color: #141721;
+      font-size: 18px;
+    }
+
+    .content-body a {
+      color: #78dce8;
+      font-size: 18px;
+    }
+
+    .footer {
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      background-position: center top;
+    }
+
+    .footer-body {
+      background-color: #ffffff;
+    }
+
+    .footer-body p,
+    .footer-body ul li,
+    .footer-body ol li {
+      color: #141721;
+      font-size: 18px;
+    }
+
+    .footer-body a {
+      color: #141721;
+      font-size: 16px;
+    }
+
+    .infoblock,
+    .infoblock p,
+    .infoblock ul li,
+    .infoblock ol li {
+      line-height: 120%;
+      font-size: 14px;
+      color: #141721;
+    }
+
+    .infoblock a {
+      font-size: 14px;
+      color: #141721;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #000000;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: #000000;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #000000;
+    }
+
+    a.button,
+    button.button {
+      border-style: solid;
+      border-color: #78dce8;
+      border-width: 16px 40px 16px 40px;
+      display: inline-block;
+      background: #78dce8;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: 'arial', 'helvetica neue', 'helvetica', 'sans-serif';
+      color: #141721;
+      text-decoration: none;
+      width: auto;
+      text-align: center;
+    }
+
+    .button-border {
+      border-style: solid;
+      border-color: #78dce8;
+      background: #ffffff;
+      border-width: 0px 0px 0px 0px;
+      display: inline-block;
+      width: auto;
+    }
+
+    a.button-outline,
+    button.button-outline {
+      border-style: solid;
+      border-color: transparent;
+      border-width: 12px;
+      display: inline-block;
+      background: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: 'arial', 'helvetica neue', 'helvetica', 'sans-serif';
+      color: #141721;
+      text-decoration: none;
+      width: auto;
+      text-align: center;
+    }
+
+    .button-outline-border {
+      border-style: solid;
+      border-color: #141721;
+      background: #ffffff;
+      border-width: 1px 1px 1px 1px;
+      display: inline-block;
+      width: auto;
+    }
+
+    /* RESPONSIVE STYLES Please do not delete and edit CSS styles below. If you don't need responsive layout, please delete this section. */
+    @media only screen and (max-width: 600px) {
 
       p,
       ul li,
       ol li,
       a {
-        -webkit-text-size-adjust: none;
-        -ms-text-size-adjust: none;
-        mso-line-height-rule: exactly;
+        line-height: 150% !important;
       }
 
-      .left {
-        float: left;
-      }
-
-      .right {
-        float: right;
-      }
-
-      .p5 {
-        padding: 5px;
-      }
-
-      .p5t {
-        padding-top: 5px;
-      }
-
-      .p5b {
-        padding-bottom: 5px;
-      }
-
-      .p5l {
-        padding-left: 5px;
-      }
-
-      .p5r {
-        padding-right: 5px;
-      }
-
-      .p10 {
-        padding: 10px;
-      }
-
-      .p10t {
-        padding-top: 10px;
-      }
-
-      .p10b {
-        padding-bottom: 10px;
-      }
-
-      .p10l {
-        padding-left: 10px;
-      }
-
-      .p10r {
-        padding-right: 10px;
-      }
-
-      .p15 {
-        padding: 15px;
-      }
-
-      .p15t {
-        padding-top: 15px;
-      }
-
-      .p15b {
-        padding-bottom: 15px;
-      }
-
-      .p15l {
-        padding-left: 15px;
-      }
-
-      .p15r {
-        padding-right: 15px;
-      }
-
-      .p20 {
-        padding: 20px;
-      }
-
-      .p20t {
-        padding-top: 20px;
-      }
-
-      .p20b {
-        padding-bottom: 20px;
-      }
-
-      .p20l {
-        padding-left: 20px;
-      }
-
-      .p20r {
-        padding-right: 20px;
-      }
-
-      .p25 {
-        padding: 25px;
-      }
-
-      .p25t {
-        padding-top: 25px;
-      }
-
-      .p25b {
-        padding-bottom: 25px;
-      }
-
-      .p25l {
-        padding-left: 25px;
-      }
-
-      .p25r {
-        padding-right: 25px;
-      }
-
-      .p30 {
-        padding: 30px;
-      }
-
-      .p30t {
-        padding-top: 30px;
-      }
-
-      .p30b {
-        padding-bottom: 30px;
-      }
-
-      .p30l {
-        padding-left: 30px;
-      }
-
-      .p30r {
-        padding-right: 30px;
-      }
-
-      .p35 {
-        padding: 35px;
-      }
-
-      .p35t {
-        padding-top: 35px;
-      }
-
-      .p35b {
-        padding-bottom: 35px;
-      }
-
-      .p35l {
-        padding-left: 35px;
-      }
-
-      .p35r {
-        padding-right: 35px;
-      }
-
-      .p40 {
-        padding: 40px;
-      }
-
-      .p40t {
-        padding-top: 40px;
-      }
-
-      .p40b {
-        padding-bottom: 40px;
-      }
-
-      .p40l {
-        padding-left: 40px;
-      }
-
-      .p40r {
-        padding-right: 40px;
-      }
-
-      .menu td {
-        border: 0;
-      }
-
-      .menu td a img {
-        display: inline-block !important;
-      }
-
-      /* END CONFIG STYLES */
-      a {
-        text-decoration: underline;
-      }
-
-      p,
-      ul li,
-      ol li {
-        font-family: 'arial', 'helvetica neue', 'helvetica', 'sans-serif';
-        line-height: 150%;
-      }
-
-      ul li,
-      ol li {
-        margin-bottom: 15px;
-        margin-left: 0;
-      }
-
-      .menu td a {
-        text-decoration: none;
-        display: block;
-        font-family: 'arial', 'helvetica neue', 'helvetica', 'sans-serif';
-      }
-
-      .wrapper {
-        width: 100%;
-        height: 100%;
-        background-image: none;
-        background-repeat: repeat;
-        background-position: center top;
-      }
-
-      .content-body {
-        background-color: #ffffff;
-      }
-
-      .content-body p,
-      .content-body ul li,
-      .content-body ol li {
-        color: #141721;
-        font-size: 18px;
-      }
-
-      .content-body a {
-        color: #78dce8;
-        font-size: 18px;
-      }
-
-      .footer {
-        background-color: transparent;
-        background-image: none;
-        background-repeat: repeat;
-        background-position: center top;
-      }
-
-      .footer-body {
-        background-color: #ffffff;
-      }
-
-      .footer-body p,
-      .footer-body ul li,
-      .footer-body ol li {
-        color: #141721;
-        font-size: 18px;
-      }
-
-      .footer-body a {
-        color: #141721;
-        font-size: 16px;
-      }
-
-      .infoblock,
-      .infoblock p,
-      .infoblock ul li,
-      .infoblock ol li {
-        line-height: 120%;
-        font-size: 14px;
-        color: #141721;
-      }
-
-      .infoblock a {
-        font-size: 14px;
-        color: #141721;
+      h1,
+      h2,
+      h3,
+      h1 a,
+      h2 a,
+      h3 a {
+        line-height: 120% !important;
       }
 
       h1 {
-        font-size: 36px;
-        color: #000000;
+        font-size: 30px !important;
+        text-align: center;
       }
 
       h2 {
-        font-size: 30px;
-        color: #000000;
+        font-size: 26px !important;
+        text-align: center;
       }
 
       h3 {
-        font-size: 24px;
-        color: #000000;
+        font-size: 22px !important;
+        text-align: center;
+      }
+
+      *[class='gmail-fix'] {
+        display: none !important;
+      }
+
+      .m-txt-c,
+      .m-txt-c h1,
+      .m-txt-c h2,
+      .m-txt-c h3 {
+        text-align: center !important;
+      }
+
+      .m-txt-r,
+      .m-txt-r h1,
+      .m-txt-r h2,
+      .m-txt-r h3 {
+        text-align: right !important;
+      }
+
+      .m-txt-l,
+      .m-txt-l h1,
+      .m-txt-l h2,
+      .m-txt-l h3 {
+        text-align: left !important;
+      }
+
+      .m-txt-r img,
+      .m-txt-c img,
+      .m-txt-l img {
+        display: inline !important;
+      }
+
+      .button-border {
+        display: block !important;
       }
 
       a.button,
       button.button {
-        border-style: solid;
-        border-color: #78dce8;
-        border-width: 16px 40px 16px 40px;
-        display: inline-block;
-        background: #78dce8;
-        font-size: 16px;
-        font-weight: 700;
-        font-family: 'arial', 'helvetica neue', 'helvetica', 'sans-serif';
-        color: #141721;
-        text-decoration: none;
-        width: auto;
-        text-align: center;
+        display: block !important;
+        border-width: 10px 0px 10px 0px !important;
       }
 
-      .button-border {
-        border-style: solid;
-        border-color: #78dce8;
-        background: #ffffff;
-        border-width: 0px 0px 0px 0px;
-        display: inline-block;
-        width: auto;
+      .btn-fw {
+        border-width: 10px 0px !important;
+        text-align: center !important;
       }
 
-      a.button-outline,
-      button.button-outline {
-        border-style: solid;
-        border-color: transparent;
-        border-width: 12px;
-        display: inline-block;
-        background: #ffffff;
-        font-size: 16px;
-        font-weight: 700;
-        font-family: 'arial', 'helvetica neue', 'helvetica', 'sans-serif';
-        color: #141721;
-        text-decoration: none;
-        width: auto;
-        text-align: center;
+      .adaptive table,
+      .btn-fw,
+      .btn-fw-brdr,
+      .left,
+      .right {
+        width: 100% !important;
       }
 
-      .button-outline-border {
-        border-style: solid;
-        border-color: #141721;
-        background: #ffffff;
-        border-width: 1px 1px 1px 1px;
-        display: inline-block;
-        width: auto;
+      .content table,
+      .header table,
+      .footer table,
+      .content,
+      .footer,
+      .header {
+        width: 100% !important;
+        max-width: 600px !important;
       }
 
-      /* RESPONSIVE STYLES Please do not delete and edit CSS styles below. If you don't need responsive layout, please delete this section. */
-      @media only screen and (max-width: 600px) {
-        p,
-        ul li,
-        ol li,
-        a {
-          line-height: 150% !important;
-        }
-
-        h1,
-        h2,
-        h3,
-        h1 a,
-        h2 a,
-        h3 a {
-          line-height: 120% !important;
-        }
-
-        h1 {
-          font-size: 30px !important;
-          text-align: center;
-        }
-
-        h2 {
-          font-size: 26px !important;
-          text-align: center;
-        }
-
-        h3 {
-          font-size: 22px !important;
-          text-align: center;
-        }
-
-        *[class='gmail-fix'] {
-          display: none !important;
-        }
-
-        .m-txt-c,
-        .m-txt-c h1,
-        .m-txt-c h2,
-        .m-txt-c h3 {
-          text-align: center !important;
-        }
-
-        .m-txt-r,
-        .m-txt-r h1,
-        .m-txt-r h2,
-        .m-txt-r h3 {
-          text-align: right !important;
-        }
-
-        .m-txt-l,
-        .m-txt-l h1,
-        .m-txt-l h2,
-        .m-txt-l h3 {
-          text-align: left !important;
-        }
-
-        .m-txt-r img,
-        .m-txt-c img,
-        .m-txt-l img {
-          display: inline !important;
-        }
-
-        .button-border {
-          display: block !important;
-        }
-
-        a.button,
-        button.button {
-          display: block !important;
-          border-width: 10px 0px 10px 0px !important;
-        }
-
-        .btn-fw {
-          border-width: 10px 0px !important;
-          text-align: center !important;
-        }
-
-        .adaptive table,
-        .btn-fw,
-        .btn-fw-brdr,
-        .left,
-        .right {
-          width: 100% !important;
-        }
-
-        .content table,
-        .header table,
-        .footer table,
-        .content,
-        .footer,
-        .header {
-          width: 100% !important;
-          max-width: 600px !important;
-        }
-
-        .adapt-td {
-          display: block !important;
-          width: 100% !important;
-        }
-
-        .adapt-img {
-          width: 100% !important;
-          height: auto !important;
-        }
-
-        .m-p0 {
-          padding: 0px !important;
-        }
-
-        .m-p0r {
-          padding-right: 0px !important;
-        }
-
-        .m-p0l {
-          padding-left: 0px !important;
-        }
-
-        .m-p0t {
-          padding-top: 0px !important;
-        }
-
-        .m-p0b {
-          padding-bottom: 0 !important;
-        }
-
-        .m-p20b {
-          padding-bottom: 20px !important;
-        }
-
-        .mobile-hidden,
-        .hidden {
-          display: none !important;
-        }
-
-        .menu td {
-          width: 1% !important;
-        }
-
-        table.table-not-adapt {
-          width: auto !important;
-        }
+      .adapt-td {
+        display: block !important;
+        width: 100% !important;
       }
 
-      /* END RESPONSIVE STYLES */
-    </style>
-  </head>
+      .adapt-img {
+        width: 100% !important;
+        height: auto !important;
+      }
 
-  <body>
-    <table class="wrapper" width="100%" cellspacing="0" cellpadding="0">
-      <tbody>
-        <tr>
-          <td valign="top">
-            <!-- LOGO -->
-            <table class="content" cellspacing="0" cellpadding="0" align="center">
-              <tbody>
-                <tr>
-                  <td align="center">
-                    <table
-                      class="header-body"
-                      width="640"
-                      cellspacing="0"
-                      cellpadding="0"
-                      align="center"
-                    >
-                      <tbody>
-                        <tr>
-                          <td class="p20t p40b p20r" align="left">
-                            <table width="100%" cellspacing="0" cellpadding="0">
-                              <tbody>
-                                <tr>
-                                  <td align="left" style="font-size: 0">
-                                    <a href="https://ment.si" target="_blank">
-                                      <img
-                                        src="data:image/png;base64,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"
-                                        width="180"
-                                      />
+      .m-p0 {
+        padding: 0px !important;
+      }
+
+      .m-p0r {
+        padding-right: 0px !important;
+      }
+
+      .m-p0l {
+        padding-left: 0px !important;
+      }
+
+      .m-p0t {
+        padding-top: 0px !important;
+      }
+
+      .m-p0b {
+        padding-bottom: 0 !important;
+      }
+
+      .m-p20b {
+        padding-bottom: 20px !important;
+      }
+
+      .mobile-hidden,
+      .hidden {
+        display: none !important;
+      }
+
+      .menu td {
+        width: 1% !important;
+      }
+
+      table.table-not-adapt {
+        width: auto !important;
+      }
+    }
+
+    /* END RESPONSIVE STYLES */
+  </style>
+</head>
+
+<body>
+  <table class="wrapper" width="100%" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td valign="top">
+          <!-- LOGO -->
+          <table class="content" cellspacing="0" cellpadding="0" align="center">
+            <tbody>
+              <tr>
+                <td align="center">
+                  <table class="header-body" width="640" cellspacing="0" cellpadding="0" align="center">
+                    <tbody>
+                      <tr>
+                        <td class="p20t p40b p20r" align="left">
+                          <table width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td align="left" style="font-size: 0">
+                                  <a href="https://ment.si" target="_blank">
+                                    <img
+                                      src="data:image/png;base64,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"
+                                      width="180" />
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- Content -->
+          <table class="content" cellspacing="0" cellpadding="0" align="center">
+            <tbody>
+              <tr>
+                <td align="center">
+                  <table class="content-body" width="640" style="background-color: #ffffff" cellspacing="0"
+                    cellpadding="0" bgcolor="#ffffff" align="center">
+                    <tbody>
+                      <tr>
+                        <td valign="top" align="left">
+                          <table width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td class="p25b" align="left">
+                                  <h1>Dear appointMENT artist!</h1>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="p30b" align="left">
+                                  <p>
+                                    <strong>Your digital poster is now eternalized as an NFT.</strong>
+                                  </p>
+                                  <br /><br />
+                                  <p>
+                                    To get ahold of your very own NFT art, these are the steps to
+                                    go through:
+                                  </p>
+                                  <ol>
+                                    <li>
+                                      <p>
+                                        Install a <strong>digital wallet</strong> - either as a
+                                        mobile app or a desktop browser extension. The platform
+                                        supports connectivity with:
+                                      </p>
+                                      <ul>
+                                        <li>
+                                          <p>
+                                            MetaMask (<a
+                                              href="https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask"
+                                              target="_blank">tutorials</a>)
+                                          </p>
+                                        </li>
+                                        <li>
+                                          <p>
+                                            Coinbase Wallet (<a href="https://www.coinbase.com/en-gb/wallet/tutorials"
+                                              target="_blank">tutorials</a>)
+                                          </p>
+                                        </li>
+                                        <li>
+                                          <p>
+                                            WalletConnect (<a href="https://www.youtube.com/watch?v=63eiQD7AUwY"
+                                              target="_blank">tutorial</a>)
+                                          </p>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <p>
+                                        Proceed to <strong>the NFT platform</strong> (through the
+                                        button below). The instructions will follow as you go.
+                                      </p>
+                                    </li>
+                                    <li>
+                                      <p>
+                                        Successfully connect your wallet and
+                                        <strong>claim your NFT art.</strong>
+                                      </p>
+                                    </li>
+                                  </ol>
+                                  <p align="center">
+                                    <a href="{{link}}" target="_blank" class="button">
+                                      Claim your digital art NFT
                                     </a>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- Content -->
-            <table class="content" cellspacing="0" cellpadding="0" align="center">
-              <tbody>
-                <tr>
-                  <td align="center">
-                    <table
-                      class="content-body"
-                      width="640"
-                      style="background-color: #ffffff"
-                      cellspacing="0"
-                      cellpadding="0"
-                      bgcolor="#ffffff"
-                      align="center"
-                    >
-                      <tbody>
-                        <tr>
-                          <td valign="top" align="left">
-                            <table width="100%" cellspacing="0" cellpadding="0">
-                              <tbody>
-                                <tr>
-                                  <td class="p25b" align="left">
-                                    <h1>Dear appointMENT artist!</h1>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="p30b" align="left">
-                                    <p>
-                                      <strong
-                                        >Your digital poster is now eternalized as an NFT.</strong
-                                      >
-                                    </p>
-                                    <br /><br />
-                                    <p>
-                                      To get ahold of your very own NFT art, these are the steps to
-                                      go through:
-                                    </p>
-                                    <ol>
-                                      <li>
-                                        <p>
-                                          Install a <strong>digital wallet</strong> - either as a
-                                          mobile app or a desktop browser extension. The platform
-                                          supports connectivity with:
-                                        </p>
-                                        <ul>
-                                          <li>
-                                            <p>
-                                              MetaMask (<a
-                                                href="https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask"
-                                                target="_blank"
-                                                >tutorials</a
-                                              >)
-                                            </p>
-                                          </li>
-                                          <li>
-                                            <p>
-                                              Coinbase Wallet (<a
-                                                href="https://www.coinbase.com/en-gb/wallet/tutorials"
-                                                target="_blank"
-                                                >tutorials</a
-                                              >)
-                                            </p>
-                                          </li>
-                                          <li>
-                                            <p>
-                                              WalletConnect (<a
-                                                href="https://www.youtube.com/watch?v=63eiQD7AUwY"
-                                                target="_blank"
-                                                >tutorial</a
-                                              >)
-                                            </p>
-                                          </li>
-                                        </ul>
-                                      </li>
-                                      <li>
-                                        <p>
-                                          Proceed to <strong>the NFT platform</strong> (through the
-                                          button below). The instructions will follow as you go.
-                                        </p>
-                                      </li>
-                                      <li>
-                                        <p>
-                                          Successfully connect your wallet and
-                                          <strong>claim your NFT art.</strong>
-                                        </p>
-                                      </li>
-                                    </ol>
-                                    <p align="center">
-                                      <a href="{{link}}" target="_blank" class="button">
-                                        Claim your digital art NFT
-                                      </a>
-                                    </p>
-                                    <br /><br />
-                                    <p>
-                                      <strong>Want to understand the NFTs better? Join us at <a href="https://www.meetup.com/polkadot-ljubljana/events/299234006/?_xtd=gatlbWFpbF9jbGlja9oAJDkzNWZkNTNjLWQ3MGYtNGNjZi1hMjk4LTI0YzA2YTgxNTAyYw%253D%253D">Beyond Beats</a> event - we’ll talk about appointMENT project and the
+                                  </p>
+                                  <br /><br />
+                                  <p>
+                                    <strong>Want to understand the NFTs better? Join us at <a
+                                        href="https://www.meetup.com/polkadot-ljubljana/events/299234006/?_xtd=gatlbWFpbF9jbGlja9oAJDkzNWZkNTNjLWQ3MGYtNGNjZi1hMjk4LTI0YzA2YTgxNTAyYw%253D%253D">Beyond
+                                        Beats</a> event - we’ll talk about appointMENT project and the
                                       potential your NFT art can have!</strong>
-                                    </p>
+                                  </p>
+                                  <br /><br />
+                                  <small>
+                                    <i>
+                                      Your NFT art will soon find a home on the <a
+                                        href="https://moonbeans.io/#/collections"
+                                        target="_blank"><small>Moonbeans</small></a> NFT Marketplace. <a
+                                        href="https://www.youtube.com/watch?v=WM4vxkx0bb8&t=94s" target="_blank">
+                                        <small>Here</small></a> is a short video explaining how to dig into
+                                      Moonbeans marketplace. There, you can see your NFT, set a price and approve it for
+                                      further listing.
+                                    </i>
                                     <br /><br />
-                                    <small>
-                                      <i>
-                                        Your NFT art will soon find a home on the <a href="https://moonbeans.io/#/collections"
-                                          target="_blank"><small>Moonbeans</small></a> NFT Marketplace. <a href="https://www.youtube.com/watch?v=WM4vxkx0bb8&t=94s"
-                                            target="_blank">
-                                            <small>Here</small></a> is a short video explaining how to dig into
-                                        Moonbeans marketplace. There, you can see your NFT, set a price and approve it for further listing.
-                                      </i>
-                                      <br /><br />
-                                      If you need additional assistance, or you received this email
-                                      in error, please contact
-                                      <a href="mailto:manage@ment.si"><small></small>manage@ment.si</small></a>.
-                                    </small>
-                                    <br /><br />
-                                    <br /><br />
-                                    <p>Best, <br />The MENT team</p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+                                    If you need additional assistance, or you received this email
+                                    in error, please contact
+                                    <a href="mailto:manage@ment.si"><small></small>manage@ment.si</small></a>.
+                                  </small>
+                                  <br /><br />
+                                  <br /><br />
+                                  <p>Best, <br />The MENT team</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
 </html>

@@ -51,7 +51,7 @@ export class Cron {
           const token = await generateEmailAirdropToken(users[i].email);
           await SmtpSendTemplate(
             [users[i].email],
-            'appointMENT NFTs',
+            'appointMENT 8.0 NFTs',
             'en-airdrop-claim',
             {
               link: `${env.APP_URL}/claim?token=${token}`,
